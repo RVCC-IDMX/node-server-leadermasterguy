@@ -17,14 +17,15 @@ const server = http.createServer((req, res) => {
       res.statusCode = 200;
       break;
     default:
-      path += '404.html';
-      res.statusCode = 404;
+      res.setHeader('Location', '/');
+      res.statusCode = 301;
       break;
   }
 
   fs.readFile(path, (err, data) => {
     if (err) {
       console.error(err);
+      res.end();
     } else {
       res.end(data);
     }
