@@ -14,7 +14,6 @@
   "keywords": [],
   "author": "Nicholas Trilone <nicholastrilone20@gmail.com> (https://github.com/leadermasterguy)",
   "license": "MIT",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/RVCC-IDMX/node-server-leadermasterguy/issues"
   },
